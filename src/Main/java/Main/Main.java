@@ -3,6 +3,7 @@
 * 18 september 2018
 * Maurice (MGC) van Haperen
 */
+package Main;
 
 import BusinessLogic.ShapeManager;
 import Presentation.Frame;
