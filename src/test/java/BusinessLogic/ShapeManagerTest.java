@@ -9,14 +9,14 @@ import static org.junit.Assert.*;
 public class ShapeManagerTest {
     @Test
     public void calculateTotalVolume() throws Exception {
-        ShapeManager shapeManager = new ShapeManager();
+        BusinessLogic.ShapeManager shapeManager = new BusinessLogic.ShapeManager();
         assertEquals(0.0, shapeManager.calculateTotalVolume(), 0.00001);
 
-        Sphere sphere = new Sphere(5.0);
-        Cylinder cylinder = new Cylinder(5.0, 6.0);
-        Cone cone = new Cone(3, 4);
-        RectangularPrism rectangularPrism = new RectangularPrism(3.0, 4.0, 5.0);
-        SquarePyramid squarePyramid = new SquarePyramid(3.0, 2.0);
+        Domain.Sphere sphere = new Domain.Sphere(5.0);
+        Domain.Cylinder cylinder = new Domain.Cylinder(5.0, 6.0);
+        Domain.Cone cone = new Domain.Cone(3, 4);
+        Domain.RectangularPrism rectangularPrism = new Domain.RectangularPrism(3.0, 4.0, 5.0);
+        Domain.SquarePyramid squarePyramid = new Domain.SquarePyramid(3.0, 2.0);
 
         shapeManager.add(sphere);
         shapeManager.add(cylinder);

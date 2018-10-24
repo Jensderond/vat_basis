@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class SphereTest {
     @Test
     public void calculateVolume() throws Exception {
-        Sphere sphere = new Sphere(5.0);
+        Domain.Sphere sphere = new Domain.Sphere(5.0);
         assertEquals(523.59877, sphere.calculateVolume(), 0.00001);
 
         sphere.setRadius(13.25);

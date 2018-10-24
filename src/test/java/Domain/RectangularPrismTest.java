@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class RectangularPrismTest {
     @Test
     public void calculateVolume() throws Exception {
-        RectangularPrism rectangularPrism = new RectangularPrism(3.0, 4.0, 5.0);
+        Domain.RectangularPrism rectangularPrism = new Domain.RectangularPrism(3.0, 4.0, 5.0);
         assertEquals(60.0, rectangularPrism.calculateVolume(), 0.00001);
 
         //rectangularPrism.setLength(6.54);

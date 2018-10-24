@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class CylinderTest {
     @Test
     public void calculateVolume() throws Exception {
-        Cylinder cylinder = new Cylinder(5.0, 6.0);
+        Domain.Cylinder cylinder = new Domain.Cylinder(5.0, 6.0);
         assertEquals(471.23889, cylinder.calculateVolume(), 0.00001);
 
         cylinder.setRadius(5.88);
