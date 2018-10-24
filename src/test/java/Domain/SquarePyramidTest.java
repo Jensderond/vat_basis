@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class SquarePyramidTest {
     @Test
     public void calculateVolume() throws Exception {
-        Domain.SquarePyramid squarePyramid = new Domain.SquarePyramid(3.0, 2.0);
+        SquarePyramid squarePyramid = new SquarePyramid(3.0, 2.0);
         assertEquals(6.0, squarePyramid.calculateVolume(), 0.00001);
 
         squarePyramid.setLength(17.45);
