@@ -4,8 +4,6 @@
 * Maurice (MGC) van Haperen
 */
 
-package Main;
-
 import BusinessLogic.ShapeManager;
 import Presentation.Frame;
 import Presentation.OverviewGUI;

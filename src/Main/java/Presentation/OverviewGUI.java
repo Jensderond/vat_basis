@@ -204,7 +204,7 @@ public class OverviewGUI extends JPanel {
      *
      */
     public void refreshShapeList() {
-        this.shapeList.setListData(new Vector<>(this.shapeManager.getShapes()));
+        this.shapeList.setListData(new Vector<Shape>(this.shapeManager.getShapes()));
     }
 
     public class OverviewButtonHandler implements ActionListener {
