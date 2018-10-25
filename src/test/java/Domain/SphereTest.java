@@ -18,4 +18,16 @@ public class SphereTest {
         assertEquals(70592.955717374, sphere.calculateVolume(), 0.000000001);
     }
 
+    @Test
+    public void calculateSecondVolume() throws Exception {
+        Sphere sphere = new Sphere(13.25);
+        assertEquals( 9743.9768643435, sphere.calculateVolume(), 0.00000001);
+    }
+
+    @Test
+    public void calculateThirdVolume() throws Exception {
+        Sphere sphere = new Sphere(25.6384);
+        assertEquals(70592.955717374, sphere.calculateVolume(), 0.000000001);
+    }
+
 }

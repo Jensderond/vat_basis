@@ -21,4 +21,16 @@ public class CylinderTest {
         assertEquals(5252.19408, cylinder.calculateVolume(), 0.00001);
     }
 
+    @Test
+    public void calculateSecondVolume() throws Exception {
+        Cylinder cylinder = new Cylinder(5.88, 2.37);
+        assertEquals(257.42627, cylinder.calculateVolume(), 0.00001);
+    }
+
+    @Test
+    public void calculateThirdVolume() throws Exception {
+        Cylinder cylinder = new Cylinder(17.6535, 5.3645);
+        assertEquals(5252.19408, cylinder.calculateVolume(), 0.00001);
+    }
+
 }

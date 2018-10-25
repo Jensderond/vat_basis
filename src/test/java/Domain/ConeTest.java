@@ -11,13 +11,20 @@ public class ConeTest {
         Cone cone = new Cone(3, 4);
         assertEquals(37.69911, cone.calculateVolume(), 0.00001);
 
-        cone.setRadius(5.78);
-        cone.setHeight(6.65);
-        assertEquals(232.65154, cone.calculateVolume(), 0.00001);
-
         cone.setRadius(7.14587);
         cone.setHeight(12.96587);
         assertEquals(693.33082, cone.calculateVolume(), 0.00001);
     }
 
+    @Test
+    public void calculateSecondVolume() throws Exception {
+        Cone cone = new Cone(5.78, 6.65);
+        assertEquals(232.65154, cone.calculateVolume(), 0.00001);
+    }
+
+    @Test
+    public void calculateThirdVolume() throws Exception {
+        Cone cone = new Cone(7.14587, 12.96587);
+        assertEquals(693.33082, cone.calculateVolume(), 0.00001);
+    }
 }
